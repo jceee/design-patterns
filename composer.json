@@ -1,0 +1,11 @@
+{
+  "name": "design-patterns",
+  "description": "The design-patterns.",
+  "keywords": ["partterns"],
+  "type": "project",
+  "autoload":{
+    "psr-4":{
+      "Jceee\\DP\\":"./src/"
+    }
+  }
+}
