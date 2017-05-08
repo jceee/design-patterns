@@ -2,11 +2,11 @@
 
 require_once (__DIR__ . '/../../../../vendor/autoload.php');
 
-$params = new \Jceee\DP\Partterns\Behavioral\Chain\Params();
+$params = new \Jonas\DP\Partterns\Behavioral\Chain\Params();
 
-$params->setParam('id', 1111);
+$params->setParam('id', 1);
 
-$concat = new \Jceee\DP\Partterns\Behavioral\Chain\Concat();
+$concat = new \Jonas\DP\Partterns\Behavioral\Chain\Concat();
 
 $result = $concat->handle($params);
 

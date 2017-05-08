@@ -1,5 +1,8 @@
 <?php
-namespace Jceee\DP\Partterns\Create\SimpleFactory;
+namespace Jonas\DP\Partterns\Create\SimpleFactory;
+
+use Jonas\DP\Partterns\Create\Product\ProductA;
+use Jonas\DP\Partterns\Create\Product\ProductB;
 
 class Factory
 {

@@ -1,6 +1,7 @@
 <?php
 
-namespace Jceee\DP\Partterns\Create\FactoryMethod;
+namespace Jonas\DP\Partterns\Create\FactoryMethod;
+
 
 interface CreateInterface
 {

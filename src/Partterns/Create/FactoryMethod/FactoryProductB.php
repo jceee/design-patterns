@@ -1,6 +1,8 @@
 <?php
 
-namespace Jceee\DP\Partterns\Create\FactoryMethod;
+namespace Jonas\DP\Partterns\Create\FactoryMethod;
+
+use Jonas\DP\Partterns\Create\Product\ProductB;
 
 class FactoryProductB implements CreateInterface
 {

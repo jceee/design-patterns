@@ -1,6 +1,6 @@
 <?php
 
-namespace Jceee\DP\Partterns\Behavioral\Chain;
+namespace Jonas\DP\Partterns\Behavioral\Chain;
 
 /**
  * 责任链的通用处理器类Handler（通常是一个接口或抽象类）
