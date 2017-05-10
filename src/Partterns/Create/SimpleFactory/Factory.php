@@ -1,19 +1,19 @@
 <?php
 namespace Jonas\DP\Partterns\Create\SimpleFactory;
 
-use Jonas\DP\Partterns\Create\Product\ProductA;
-use Jonas\DP\Partterns\Create\Product\ProductB;
+use Jonas\DP\Partterns\Create\SimpleFactory\Live\AliYunLive;
+use Jonas\DP\Partterns\Create\SimpleFactory\Live\QCloudLive;
 
 class Factory
 {
-    public static function createProduct($type)
+    public static function getLiveHandler($type = null)
     {
         switch ($type) {
-            case 'A':
-                return new ProductA();
+            case 'QCloud':
+                return new QCloudLive();
             default:
-            case 'B':
-                return new ProductB();
+            case 'AliYun':
+                return new AliYunLive();
                 break;
         }
     }

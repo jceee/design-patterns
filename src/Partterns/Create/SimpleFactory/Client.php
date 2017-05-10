@@ -8,8 +8,8 @@
 
 namespace Jonas\DP\Partterns\Create\SimpleFactory;
 
-use Jonas\DP\Partterns\Create\Product\ProductA;
-use Jonas\DP\Partterns\Create\Product\ProductB;
+use Jonas\DP\Partterns\Create\SimpleFactory\Live\AliYunLive;
+use Jonas\DP\Partterns\Create\SimpleFactory\Live\QCloudLive;
 
 require_once __DIR__ . '/../../../Bootstrap/config.php';
 
@@ -17,22 +17,24 @@ class Client extends \Jonas\DP\Partterns\Common\Client
 {
     public function before()
     {
-        $productA = new ProductA();
+        $liveAli = new AliYunLive();
+        var_dump($liveAli->create());
 
-        var_dump($productA->getName());
 
-        $productB = new ProductB();
 
-        var_dump($productB->getName());
+        $liveQCloud = new QCloudLive();
+        var_dump($liveQCloud->create());
     }
 
     public function after()
     {
-        $productA = Factory::createProduct('A');
-        $productB = Factory::createProduct('B');
+        $liveAli = Factory::getLiveHandler('AliYun');
+        var_dump($liveAli->create());
 
-        var_dump($productA->getName());
-        var_dump($productB->getName());
+
+
+        $liveQCloud = Factory::getLiveHandler('QCloud');
+        var_dump($liveQCloud->create());
     }
 }
 

@@ -5,5 +5,5 @@ namespace Jonas\DP\Partterns\Create\FactoryMethod;
 
 interface CreateInterface
 {
-    public function create();
+    public static function createOption();
 }
