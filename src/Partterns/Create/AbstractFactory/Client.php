@@ -16,8 +16,12 @@ class Client extends \Jonas\DP\Partterns\Common\Client
 
     public function after()
     {
-        var_dump(AppleFactory::phone()->showPhoneName());
-        var_dump(AppleFactory::book()->showBookName());
+        var_dump(
+            AppleFactory::phone()->showPhoneName()
+        );
+        var_dump(
+            AppleFactory::book()->showBookName()
+        );
     }
 }
 

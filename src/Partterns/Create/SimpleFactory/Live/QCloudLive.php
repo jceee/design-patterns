@@ -6,6 +6,6 @@ class QCloudLive implements LiveInterface
 {
     public function create()
     {
-        return 'qCloud';
+        return 'create qCloud live';
     }
 }
